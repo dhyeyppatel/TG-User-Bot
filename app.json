@@ -1,0 +1,43 @@
+{
+  "name": "SilentXForwardBot",
+  "description": "A Telegram Bot To Forward Videos And Documents Without Forward Tag.",
+  "keywords": [
+    "telegram",
+    "bot",
+    "forward",
+    "pyrogram"
+  ],
+  "repository": "https://github.com/NBBotz/Auto-Forward-Bot",
+  "env": {
+    "API_ID": {
+      "description": "Get This Value From https://my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get This Value From https://my.telegram.org/apps",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Get This Value From @BotFather",
+      "required": true
+    },
+    "SOURCE_CHANNELS": {
+      "description": "Space Or Comma Separated List Of Source Channel IDs",
+      "required": true
+    },
+    "TARGET_CHANNELS": {
+      "description": "Space Or Comma Separated List Of Target Channel IDs",
+      "required": true
+    },
+    "WEB_SERVER": {
+      "description": "Enable Web Server For Keep-Alive",
+      "value": "True",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
