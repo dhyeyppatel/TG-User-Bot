@@ -20,4 +20,4 @@ TG_WORKERS = int(os.environ.get("TG_WORKERS", "4"))
 
 # Your Koyeb/Heroku App Url
 # Example : https://yorappurl.koyeb.app/
-APP_URL = os.environ.get("APP_URL", None)
+APP_URL = os.environ.get("https://welcome-elisabet-dhyey-22d1029d.koyeb.app/", None)
